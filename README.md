@@ -9,9 +9,9 @@
 
 | Member | Role | Responsibilities |
 |--------|------|-----------------|
-| Member 1 | Network Layer | TCP server, epoll event loop (`server.py`, `config.py`) |
-| Member 2 | SSH Protocol | Paramiko handshake, cryptographic keys (`ssh_handler.py`, `keys/`) |
-| Member 3 | Session Layer | Authentication, shell session (`auth.py`, `shell.py`) |
+| Arslan LARBI | Network Layer | TCP server, epoll event loop (`server.py`, `config.py`) |
+| Chaker YOUSFI | SSH Protocol | Paramiko handshake, cryptographic keys (`ssh_handler.py`, `keys/`) |
+| Malek RAIS | Session Layer | Authentication, shell session (`auth.py`, `shell.py`) |
 
 ---
 
@@ -72,9 +72,9 @@ ssh_server/
 ```
 main              ← stable, demo-ready code only
 └── dev           ← integration branch (merge here when a feature works)
-    ├── feature/epoll-server        (Member 1)
-    ├── feature/ssh-handshake       (Member 2)
-    └── feature/auth-shell          (Member 3)
+    ├── feature/epoll-server        (Arslan)
+    ├── feature/ssh-handshake       (Chaker)
+    └── feature/auth-shell          (Malek)
 ```
 
 **Rules:**
@@ -89,13 +89,13 @@ main              ← stable, demo-ready code only
 
 | Week | Dates | Goal | Owner |
 |------|-------|------|-------|
-| 1 | Feb 2–8 | Repo setup, environment, generate host key, basic TCP socket | All |
-| 2 | Feb 9–15 | epoll loop handles multiple connections | Member 1 |
-| 3 | Feb 16–22 | Paramiko SSH handshake working | Member 2 |
-| 4 | Feb 23 – Mar 1 | Password auth + shell session | Member 3 |
-| 5 | Mar 2–15 | Integration — all parts working together | All |
-| 6 | Mar 16–22 | Multi-client tests on local network | All |
-| 7 | Mar 23–26 | Polish, README, prepare demo & slides | All |
+| 1 | Feb 26 | Repo setup, environment, generate host key, basic TCP socket | All |
+| 2 | Feb 26– | epoll loop handles multiple connections | Arslan |
+| 3 | Feb 26– | Paramiko SSH handshake working | Chaker |
+| 4 | Feb 26 –  | Password auth + shell session | Malek |
+| 5 | Mar 20 | Integration — all parts working together | All |
+| 6 | Mar 20 | Multi-client tests on local network | All |
+| 7 | Mar 20 | Polish, README, prepare demo & slides | All |
 | **8** | **Mar 27** | **🎤 Defense** | **All** |
 
 ---
